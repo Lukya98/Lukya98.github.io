@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Pages Site</title>
-     //Pruebas integracion rive
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación Rive</title>
     <script src="https://unpkg.com/@rive-app/canvas"></script>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-    <div id="rive-container" style="width: 500px; height: 500px;"></div> //Rive container
+</head>
+<body>
+    <div id="rive-container" style="width: 500px; height: 500px;"></div>
 
     <script>
-  const riveFile = 'https://Lukya98.github.io/Lukya98.github.io/AstronautaRive.riv'; // Cambia esto a la ruta de tu archivo .riv
-  const canvas = document.getElementById('rive-container');
-  const riveInstance = new rive.Rive({
-    src: riveFile,
-    canvas: canvas,
-    autoplay: true,
-  });
-</script>
-
-    
-  </body>
+        const riveFile = 'https://Lukya98.github.io/AstronautaRive.riv'; // Ruta al archivo .riv
+        const canvas = document.getElementById('rive-container');
+        
+        const riveInstance = new rive.Rive({
+            src: riveFile,
+            canvas: canvas,
+            autoplay: true,
+        });
+    </script>
+</body>
 </html>
-
