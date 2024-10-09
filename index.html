@@ -7,11 +7,11 @@
     <script src="https://unpkg.com/@rive-app/canvas"></script>
 </head>
 <body>
-    <div id="rive-container" style="width: 500px; height: 500px;"></div>
+    <canvas id="rive-canvas" style="width: 500px; height: 500px;"></canvas>
 
     <script>
         const riveFile = 'https://Lukya98.github.io/AstronautaRive.riv'; // Ruta al archivo .riv
-        const canvas = document.getElementById('rive-container');
+        const canvas = document.getElementById('rive-canvas');
 
         const riveInstance = new rive.Rive({
             src: riveFile,
